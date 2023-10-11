@@ -4,21 +4,38 @@
 
 To develop an LSTM-based model for recognizing the named entities in the text.
 
-## Problem Statement and Dataset
+## Problem Statement:
+1. We aim to develop an LSTM-based neural network model using Bidirectional Recurrent Neural Networks for recognizing the named entities in the text.
+2. The dataset used has a number of sentences, and each words have their tags.
+3. We have to vectorize these words using Embedding techniques to train our model.
+4. Bidirectional Recurrent Neural Networks connect two hidden layers of opposite directions to the same output.
+## Dataset:
 
-## Neural Network Model
+![image](https://github.com/SOMEASVAR/named-entity-recognition/assets/93434149/ec7a565b-12d7-4a92-874f-4b45112b2dba)
 
-Include the neural network model diagram.
+## DESIGN STEPS:
+## Step 1 : 
+Import the necessary packages.
 
-## DESIGN STEPS
+## Step 2 : 
+Read the dataset, and fill the null values using forward fill.
 
-### STEP 1:
+## Step 3: 
+Create a list of words, and tags. Also find the number of unique words and tags in the dataset.
 
-### STEP 2:
+## Step 4 : 
 
-### STEP 3:
+Create a dictionary for the words and their Index values. Do the same for the tags as well,Now we move to moulding the data for training and testing.
 
-Write your own steps
+## Step 5 : 
+We do this by padding the sequences,This is done to acheive the same length of input data.
+
+## Step 6 : 
+We build a build a model using Input, Embedding, Bidirectional LSTM, Spatial Dropout, Time Distributed Dense Layers.
+
+## Step 7 : 
+We compile the model and fit the train sets and validation sets,We plot the necessary graphs for analysis,A custom prediction is done to test the model manually.
+
 
 ## PROGRAM
 ```
@@ -160,9 +177,13 @@ for w, true, pred in zip(X_test[i], y_true, p[0]):
 
 ### Training Loss, Validation Loss Vs Iteration Plot
 
-Include your plot here
+![image](https://github.com/SOMEASVAR/named-entity-recognition/assets/93434149/c05fc771-3592-4ed8-95c0-a76e8a724bdc)
+![image](https://github.com/SOMEASVAR/named-entity-recognition/assets/93434149/42cfe848-fc95-4c28-a8bd-2a2113a1c0ad)
 
 ### Sample Text Prediction
-Include your sample text prediction here.
+![image](https://github.com/SOMEASVAR/named-entity-recognition/assets/93434149/c2cb0c03-e7b8-4081-b2af-f8d8ad436755)
+![image](https://github.com/SOMEASVAR/named-entity-recognition/assets/93434149/54dcc8f1-59b2-4996-916c-247bcaa666f7)
 
-## RESULT
+
+## RESULT:
+Thus, an LSTM-based model for recognizing the named entities in the text is successfully developed.
