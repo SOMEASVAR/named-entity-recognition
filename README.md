@@ -181,10 +181,12 @@ for w, true, pred in zip(X_test[i], y_true, p[0]):
 ![image](https://github.com/SOMEASVAR/named-entity-recognition/assets/93434149/c05fc771-3592-4ed8-95c0-a76e8a724bdc)
 
 
-### Sample Text Prediction
-```
+### Sample Text Prediction:
 ![image](https://github.com/SOMEASVAR/named-entity-recognition/assets/93434149/c2cb0c03-e7b8-4081-b2af-f8d8ad436755)
-```
+
+
+
+
 ![image](https://github.com/SOMEASVAR/named-entity-recognition/assets/93434149/54dcc8f1-59b2-4996-916c-247bcaa666f7)
 
 
